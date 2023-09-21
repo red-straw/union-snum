@@ -1,0 +1,30 @@
+#include <stdio.h>
+enum Season {
+    SPRING,
+    SUMMER,
+    FALL,
+    WINTER
+};
+
+int main() {
+    enum Season currentSeason;
+    currentSeason = SPRING;
+
+    switch (currentSeason) {
+    case SPRING:
+        printf("지금은 봄입니다.\n");
+        break;
+    case SUMMER:
+        printf("지금은 여름입니다.\n");
+        break;
+    case FALL:
+        printf("지금은 가을입니다.\n");
+        break;
+    case WINTER:
+        printf("지금은 겨울입니다.\n");
+        break;
+    default:
+        printf("잘못된 계절입니다.\n");
+    }
+    return 0;
+}
